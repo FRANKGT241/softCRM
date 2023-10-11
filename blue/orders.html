@@ -334,7 +334,7 @@
                         <h4 class="page-title">Compras y Ventas</h4>
                     </div>
                     <div class="col-sm-3 text-right">
-                        <button class="btn btn-primary">Agregar Nueva Compra/Venta</button>
+                        <a href="#" class="btn btn-primary btn-rounded float-right" data-toggle="modal" data-target="#add_client"><i class="fa fa-plus"></i>Añadir Cliente</a>
                     </div>
                 </div>
                 <div class="row">
@@ -346,7 +346,7 @@
                                         <th>Producto</th>
                                         <th>ID de orden</th>
                                         <th>fecha</th>
-                                        <th>Customer</th>
+                                        <th>Encargad@</th>
                                         <th>Cantidad</th>
                                         <th>Precio Total</th>
                                         <th>Accion</th>
@@ -374,7 +374,7 @@
                                             <div class="dropdown dropdown-action">
                                                 <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                    <a class="dropdown-item" href="#"><i class="fas fa-pen m-r-5"></i> Edit</a>
+                                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_client"><i class="fas fa-pen m-r-5"></i> Editar</a>
                                                     <a class="dropdown-item" href="#"><i class="far fa-trash-alt m-r-5"></i> Delete</a>
                                                 </div>
                                             </div>
@@ -400,7 +400,7 @@
                                             <div class="dropdown dropdown-action">
                                                 <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                    <a class="dropdown-item" href="#"><i class="fas fa-pen m-r-5"></i> Edit</a>
+                                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_client"><i class="fas fa-pen m-r-5"></i> Editar</a>
                                                     <a class="dropdown-item" href="#"><i class="far fa-trash-alt m-r-5"></i> Delete</a>
                                                 </div>
                                             </div>
@@ -426,7 +426,7 @@
                                             <div class="dropdown dropdown-action">
                                                 <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                    <a class="dropdown-item" href="#"><i class="fas fa-pen m-r-5"></i> Edit</a>
+                                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_client"><i class="fas fa-pen m-r-5"></i> Editar</a>
                                                     <a class="dropdown-item" href="#"><i class="far fa-trash-alt m-r-5"></i> Delete</a>
                                                 </div>
                                             </div>
@@ -452,7 +452,7 @@
                                             <div class="dropdown dropdown-action">
                                                 <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                    <a class="dropdown-item" href="#"><i class="fas fa-pen m-r-5"></i> Edit</a>
+                                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_client"><i class="fas fa-pen m-r-5"></i> Editar</a>
                                                     <a class="dropdown-item" href="#"><i class="far fa-trash-alt m-r-5"></i> Delete</a>
                                                 </div>
                                             </div>
@@ -681,6 +681,137 @@
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery.slimscroll.js"></script>
     <script type="text/javascript" src="assets/js/app.js"></script>
+
+    
+    <!--MODAL PARA EL BOTON DE EDITAR   -->
+    <div id="edit_client" class="modal custom-modal fade" role="dialog">
+        <div class="modal-dialog">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <div class="modal-content modal-lg">
+                <div class="modal-header">
+                    <h4 class="modal-title">Editar Cliente</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="m-b-30">
+                        <form>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>Producto<span class="text-danger">*</span></label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>ID de orden<span class="text-danger">*</span></label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>fecha<span class="text-danger">*</span></label>
+                                        <input class="form-control floating" type="email">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>Encargad@<span class="text-danger">*</span></label>
+                                        <input class="form-control" type="password">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>Cantidad<span class="text-danger">*</span></label>
+                                        <input class="form-control" type="password">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>Precio Total<span class="text-danger">*</span></label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>Accion<span class="text-danger">*</span></label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m-t-20 text-center">
+                                <button class="btn btn-primary btn-lg">Crear nueva Compra/Venta</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--MODAL PARA EL BOTON DE AÑADIR-->
+    <div id="add_client" class="modal custom-modal fade" role="dialog">
+        <div class="modal-dialog">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <div class="modal-content modal-lg">
+                <div class="modal-header">
+                    <h4 class="modal-title">Añadir Cliente</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="m-b-30">
+                        <form>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>Producto<span class="text-danger">*</span></label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>ID de orden<span class="text-danger">*</span></label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>fecha<span class="text-danger">*</span></label>
+                                        <input class="form-control floating" type="email">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>Encargad@<span class="text-danger">*</span></label>
+                                        <input class="form-control" type="password">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>Cantidad<span class="text-danger">*</span></label>
+                                        <input class="form-control" type="password">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>Precio Total<span class="text-danger">*</span></label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>Accion<span class="text-danger">*</span></label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m-t-20 text-center">
+                                <button class="btn btn-primary btn-lg">Crear nueva Compra/Venta</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
