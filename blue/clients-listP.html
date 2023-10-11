@@ -5,14 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
-    <title>Preadmin - Bootstrap Admin Template</title>
+    <title>Camara Guard</title>
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/select2.min.css">
     <link rel="stylesheet" type="text/css" href="assets/plugins/fontawesome/css/all.min.css" >
     <link rel="stylesheet" type="text/css" href="assets/plugins/fontawesome/css/fontawesome.min.css" >
-    <link rel="stylesheet" type="text/css" href="assets/css/select2.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datetimepicker.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!--[if lt IE 9]>
 		<script src="assets/js/html5shiv.min.js"></script>
@@ -25,89 +24,14 @@
         <div class="header">
             <div class="header-left">
                 <a href="index.html" class="logo">
-                    <img src="assets/img/logo.png" width="40" height="40" alt="">
+                    <img src="assets/img/LogoCamGuard.png" width="75" height="55" alt="">
                 </a>
             </div>
             <div class="page-title-box float-left">
-                <h3>Preadmin</h3>
+                <h3>Camara Guard</h3>
             </div>
             <a id="mobile_btn" class="mobile_btn float-left" href="#sidebar"><i class="fa fa-bars" aria-hidden="true"></i></a>
             <ul class="nav user-menu float-right">
-                <li class="nav-item dropdown d-none d-sm-block">
-                    <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"><i class="far fa-bell"></i> <span class="badge badge-pill bg-primary float-right">3</span></a>
-                    <div class="dropdown-menu notifications">
-                        <div class="topnav-dropdown-header">
-                            <span>Notifications</span>
-                        </div>
-                        <div class="drop-scroll">
-                            <ul class="notification-list">
-                                <li class="notification-message">
-                                    <a href="activities.html">
-                                        <div class="media">
-											<span class="avatar">
-												<img alt="John Doe" src="assets/img/user.jpg" class="img-fluid">
-											</span>
-											<div class="media-body">
-												<p class="noti-details"><span class="noti-title">John Doe</span> added new task <span class="noti-title">Patient appointment booking</span></p>
-												<p class="noti-time"><span class="notification-time">4 mins ago</span></p>
-											</div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="notification-message">
-                                    <a href="activities.html">
-                                        <div class="media">
-											<span class="avatar">V</span>
-											<div class="media-body">
-												<p class="noti-details"><span class="noti-title">Tarah Shropshire</span> changed the task name <span class="noti-title">Appointment booking with payment gateway</span></p>
-												<p class="noti-time"><span class="notification-time">6 mins ago</span></p>
-											</div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="notification-message">
-                                    <a href="activities.html">
-                                        <div class="media">
-											<span class="avatar">L</span>
-											<div class="media-body">
-												<p class="noti-details"><span class="noti-title">Misty Tison</span> added <span class="noti-title">Domenic Houston</span> and <span class="noti-title">Claire Mapes</span> to project <span class="noti-title">Doctor available module</span></p>
-												<p class="noti-time"><span class="notification-time">8 mins ago</span></p>
-											</div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="notification-message">
-                                    <a href="activities.html">
-                                        <div class="media">
-											<span class="avatar">G</span>
-											<div class="media-body">
-												<p class="noti-details"><span class="noti-title">Rolland Webber</span> completed task <span class="noti-title">Patient and Doctor video conferencing</span></p>
-												<p class="noti-time"><span class="notification-time">12 mins ago</span></p>
-											</div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="notification-message">
-                                    <a href="activities.html">
-                                        <div class="media">
-											<span class="avatar">V</span>
-											<div class="media-body">
-												<p class="noti-details"><span class="noti-title">Bernardo Galaviz</span> added new task <span class="noti-title">Private chat module</span></p>
-												<p class="noti-time"><span class="notification-time">2 days ago</span></p>
-											</div>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="topnav-dropdown-footer">
-                            <a href="activities.html">View all Notifications</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="nav-item dropdown d-none d-sm-block">
-                    <a href="javascript:void(0);" id="open_msg_box" class="hasnotifications nav-link"><i class="far fa-comment"></i> <span class="badge badge-pill bg-primary float-right">8</span></a>
-                </li>
                 <li class="nav-item dropdown has-arrow">
                     <a href="#" class="dropdown-toggle nav-link user-link" data-toggle="dropdown">
                         <span class="user-img"><img class="rounded-circle" src="assets/img/user.jpg" width="40" alt="Admin">
@@ -242,56 +166,30 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="clients.html">Clients</a>
+                                    <a class="active" href="clients.html">Clients</a>
                                 </li>
                                 <li>
-                                    <a href="projects.html">Projects</a>
+                                    <a href="clients-list.html">Proveedores</a>
                                 </li>
                                 <li>
-                                    <a href="tasks.html">Tasks</a>
+                                    <a href="tasks.html">Productos y combos</a>
                                 </li>
                                 <li>
-                                    <a href="leads.html">Leads</a>
-                                </li>
-                                <li class="submenu">
-                                    <a href="#"><span> Accounts </span> <span class="menu-arrow"></span></a>
-                                    <ul class="list-unstyled" style="display: none;">
-                                        <li><a href="estimates.html">Estimates</a></li>
-                                        <li><a href="invoices.html">Invoices</a></li>
-                                        <li><a href="payments.html">Payments</a></li>
-                                        <li><a href="expenses.html">Expenses</a></li>
-                                        <li><a href="provident-fund.html">Provident Fund</a></li>
-                                        <li><a href="taxes.html">Taxes</a></li>
-                                    </ul>
-                                </li>
-                                <li class="submenu">
-                                    <a href="#"><span> Payroll </span> <span class="menu-arrow"></span></a>
-                                    <ul class="list-unstyled" style="display: none;">
-                                        <li><a href="salary.html"> Employee Salary </a></li>
-                                        <li><a href="salary-view.html"> Payslip </a></li>
-                                    </ul>
+                                    <a href="leads.html">Traslados de productos</a>
                                 </li>
                                 <li>
-                                    <a href="worksheet.html">Timing Sheet</a>
+                                    <a href="worksheet.html">Cajas y sucursales</a>
                                 </li>
                                 <li>
-                                    <a href="assets.html">Assets</a>
+                                    <a href="assets.html">Compras y ventas</a>
                                 </li>
                                 <li>
-                                    <a href="activities.html">Activities</a>
+                                    <a href="activities.html">Cotizaciones</a>
                                 </li>
                                 <li>
-                                    <a href="users.html">Users</a>
+                                    <a href="users.html">Servicicos e instalacion</a>
                                 </li>
-                                <li class="submenu">
-                                    <a href="#"><span> Reports </span> <span class="menu-arrow"></span></a>
-                                    <ul class="list-unstyled" style="display: none;">
-                                        <li><a class="active" href="expense-reports.html"> Expense Report </a></li>
-                                        <li><a href="invoice-reports.html"> Invoice Report </a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
+
                         <li class="submenu">
                             <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Ecommerce</span> <span class="menu-arrow"></span></a>
                             <ul class="list-unstyled" style="display: none;">
@@ -332,37 +230,31 @@
         <div class="page-wrapper">
             <div class="content container-fluid">
                 <div class="row">
-                    <div class="col-sm-12">
-                        <h4 class="page-title">Generar Reporte</h4>
+                    <div class="col-sm-4 col-3">
+                        <h4 class="page-title">Traslados</h4>
+                    </div>
+                    <div class="col-sm-8 col-9 text-right m-b-20">
+                        <a href="#" class="btn btn-primary btn-rounded float-right" data-toggle="modal" data-target="#add_client"><i class="fa fa-plus"></i>Añadir Traslado</a>
                     </div>
                 </div>
                 <div class="row filter-row">
                     <div class="col-sm-6 col-md-3">
-                        <div class="form-group form-focus select-focus">
-                            <label class="focus-label">Comprado por:</label>
-                            <select class="select floating">
-                                <option>seleccionar comprador</option>
-                                <option>Esmeralda Roman</option>
-                                <option>Pedro Jose</option>
-                            </select>
+                        <div class="form-group form-focus">
+                            <label class="focus-label">ID PROVEEDOR</label>
+                            <input type="text" class="form-control floating">
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-3">
                         <div class="form-group form-focus">
-                            <label class="focus-label">De</label>
-                            <div class="cal-icon">
-                                <input class="form-control floating datetimepicker" type="text">
-                            </div>
+                            <label class="focus-label">NOMBRE PROVEEDOR</label>
+                            <input type="text" class="form-control floating">
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-3">
-                        <div class="form-group form-focus">
-                            <label class="focus-label">A</label>
-                            <div class="cal-icon">
-                                <input class="form-control floating datetimepicker" type="text">
-                            </div>
-                        </div>
-                    </div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <div class="col-sm-6 col-md-3">
                         <a href="#" class="btn btn-success btn-block"> Buscar </a>
                     </div>
@@ -370,63 +262,102 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="table-responsive">
-                            <table class="table table-striped custom-table m-b-0 datatable">
+                            <table class="table table-striped custom-table datatable">
                                 <thead>
                                     <tr>
-                                        <th>Producto</th>
-                                        <th>Comprado en</th>
-                                        <th>fecha de compra</th>
-                                        <th>Comprado por</th>
-                                        <th>monto total</th>
-                                        <th>Pagado por</th>
-                                        <th class="text-center">Estatus</th>
+                                        <th>Nombre</th>
+                                        <th>Apellido</th>
+                                        <th>Direccion</th>
+                                        <th>Telefono</th>
+                                        <th>Empresa</th>
+                                        <th>Estado</th>
+                                        <th class="text-right">Accion</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <strong>VigilantEye Pro 2000</strong>
+                                            <h2>Leandro</h2>
                                         </td>
-                                        <td>Camara Guard</td>
-                                        <td>1 Oct 2023</td>
-                                        <td>Esmeralda Roman</td>
-                                        <td>$ 1250</td>
-                                        <td>Efectivo</td>
-                                        <td class="text-center">
+                                        <td>Macia</td>
+                                        <th>Oakland Mall Local No. 125</th>
+                                        <td>45127863</td>
+                                        <td>SeguriTech Solutions</td>
+                                        <td>
                                             <div class="dropdown action-label">
-                                                <a class="btn btn-white btn-sm btn-rounded dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                                                    <i class="far fa-dot-circle text-danger"></i> Pending
-                                                </a>
+                                                <a class="btn btn-white btn-sm btn-rounded dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="far fa-dot-circle text-success"></i> Completada </a>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href="#"><i class="far fa-dot-circle text-es"></i> En Camino</a>
+                                                    <a class="dropdown-item" href="#"><i class="far fa-dot-circle text-danger"></i> Espera</a>
+                                                    <a class="dropdown-item" href="#"><i class="far fa-dot-circle text-success"></i> Completada</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="text-right">
+                                            <div class="dropdown dropdown-action">
+                                                <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                    <a class="dropdown-item" href="#"><i class="far fa-dot-circle text-danger"></i> Pendiente</a>
-                                                    <a class="dropdown-item" href="#"><i class="far fa-dot-circle text-success"></i> Aprobado</a>
-                                                    <a class="dropdown-item" href="#"><i class="far fa-dot-circle"></i> Imprimir</a>
+                                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_client"><i class="fas fa-pen m-r-5"></i> Editar</a>
+                                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_client"><i class="far fa-trash-alt m-r-5"></i> Deshabilitar</a>
                                                 </div>
                                             </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <strong>SecureWatch Guardian X</strong>
+                                            <h2>Juan</h2>
                                         </td>
-                                        <td>Camara Guard</td>
-                                        <td>8 May 2023</td>
-                                        <td>Pedro Jose</td>
-                                        <td>$ 950</td>
-                                        <td>Cheque</td>
-                                        <td class="text-center">
+                                        <td>Fernando</td>
+                                        <th>Plaza Santander Local No. 3</th>
+                                        <td>45892345</td>
+                                        <td>WatchGuard Innovations</td>
+                                        <td>
                                             <div class="dropdown action-label">
-                                                <a class="btn btn-white btn-sm btn-rounded dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                                                    <i class="far fa-dot-circle text-success"></i> Approved
-                                                </a>
+                                                <a class="btn btn-white btn-sm btn-rounded dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="far fa-dot-circle text-danger"></i> En Espera </a>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href="#"><i class="far fa-dot-circle text-es"></i> En Camino</a>
+                                                    <a class="dropdown-item" href="#"><i class="far fa-dot-circle text-danger"></i> Espera</a>
+                                                    <a class="dropdown-item" href="#"><i class="far fa-dot-circle text-success"></i> Completada</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="text-right">
+                                            <div class="dropdown dropdown-action">
+                                                <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                    <a class="dropdown-item" href="#"><i class="far fa-dot-circle text-danger"></i> Pendiente</a>
-                                                    <a class="dropdown-item" href="#"><i class="far fa-dot-circle text-success"></i> Aprobado</a>
-                                                    <a class="dropdown-item" href="#"><i class="far fa-dot-circle"></i> Imprimir</a>
+                                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_client"><i class="fas fa-pen m-r-5"></i> Editar</a>
+                                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_client"><i class="far fa-trash-alt m-r-5"></i> Deshabilitar</a>
                                                 </div>
                                             </div>
                                         </td>
                                     </tr>
+                                    <tr>
+                                        <td>
+                                            <h2>Gael</h2>
+                                        </td>
+                                        <td>Belda</td>
+                                        <th>Pradera Xela Local No. 59</th>
+                                        <td>52638941</td>
+                                        <td>AbsoluteSecure Providers</td>
+                                        <td>
+                                            <div class="dropdown action-label">
+                                                <a class="btn btn-white btn-sm btn-rounded dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="far fa-dot-circle text-es"></i> En Camino </a>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href="#"><i class="far fa-dot-circle text-es"></i> En Camino</a>
+                                                    <a class="dropdown-item" href="#"><i class="far fa-dot-circle text-danger"></i> Espera</a>
+                                                    <a class="dropdown-item" href="#"><i class="far fa-dot-circle text-success"></i> Completada</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="text-right">
+                                            <div class="dropdown dropdown-action">
+                                                <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_client"><i class="fas fa-pen m-r-5"></i> Editar</a>
+                                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_client"><i class="far fa-trash-alt m-r-5"></i> Deshabilitar</a>
+                                                </div>
+                                            </div>
+                                        </td>
                                 </tbody>
                             </table>
                         </div>
@@ -643,6 +574,123 @@
                 </div>
             </div>
         </div>
+        <div id="add_client" class="modal custom-modal fade" role="dialog">
+            <div class="modal-dialog">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <div class="modal-content modal-lg">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Añadir Traslado</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="m-b-30">
+                            <form>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label>Nombre<span class="text-danger">*</span></label>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label>Apellido<span class="text-danger">*</span></label>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label>Direccion<span class="text-danger">*</span></label>
+                                            <input class="form-control floating" type="email">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label>Telefono<span class="text-danger">*</span></label>
+                                            <input class="form-control floating" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label>Empresa<span class="text-danger">*</span></label>
+                                            <input class="form-control floating" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="m-t-20 text-center">
+                                    <button class="btn btn-primary btn-lg">Crear Proveedor</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="edit_client" class="modal custom-modal fade" role="dialog">
+            <div class="modal-dialog">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <div class="modal-content modal-lg">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Editar Proveedor</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="m-b-30">
+                            <form>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label>Nombre<span class="text-danger">*</span></label>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label>Apellido<span class="text-danger">*</span></label>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label>Direccion<span class="text-danger">*</span></label>
+                                            <input class="form-control floating" type="email">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label>Telefono<span class="text-danger">*</span></label>
+                                            <input class="form-control floating" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label>Empresa<span class="text-danger">*</span></label>
+                                            <input class="form-control floating" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="m-t-20 text-center">
+                                    <button class="btn btn-primary btn-lg">Crear Proveedor</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="delete_client" class="modal custom-modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content modal-md">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Deshabilitar Proveedor</h4>
+                    </div>
+                    <div class="modal-body card-box">
+                        <p>Estas Seguro de deshabilitar este Proveedor?</p>
+                        <div class="m-t-20"> <a href="#" class="btn btn-white" data-dismiss="modal">Cerrar</a>
+                            <button type="submit" class="btn btn-danger">Deshabilitar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="sidebar-overlay" data-reff=""></div>
     <script type="text/javascript" src="assets/js/jquery-3.5.1.min.js"></script>
@@ -650,10 +698,9 @@
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="assets/js/dataTables.bootstrap4.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.slimscroll.js"></script>
     <script type="text/javascript" src="assets/js/select2.min.js"></script>
     <script type="text/javascript" src="assets/js/moment.min.js"></script>
-    <script type="text/javascript" src="assets/js/bootstrap-datetimepicker.min.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.slimscroll.js"></script>
     <script type="text/javascript" src="assets/js/app.js"></script>
 </body>
 
