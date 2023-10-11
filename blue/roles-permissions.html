@@ -135,38 +135,11 @@
                 <div class="sidebar-menu">
                     <ul>
                         <li>
-                            <a href="index.html"><i class="fa fa-home back-icon"></i> Back to Home</a>
+                            <a href="index.html"><i class="fa fa-home back-icon"></i> Regresar a Inicio</a>
                         </li>
-                        <li class="menu-title">Settings</li>
+                        <li class="menu-title">Ajustes</li>
                         <li>
-                            <a href="settings.html">Company Settings</a>
-                        </li>
-                        <li>
-                            <a href="localization.html">Localization</a>
-                        </li>
-                        <li>
-                            <a href="theme-settings.html">Theme Settings</a>
-                        </li>
-                        <li class="active">
-                            <a href="roles-permissions.html">Roles & Permissions</a>
-                        </li>
-                        <li>
-                            <a href="email-settings.html">Email Settings</a>
-                        </li>
-                        <li>
-                            <a href="invoice-settings.html">Invoice Settings</a>
-                        </li>
-                        <li>
-                            <a href="salary-settings.html">Salary Settings</a>
-                        </li>
-                        <li>
-                            <a href="notifications-settings.html">Notifications</a>
-                        </li>
-                        <li>
-                            <a href="change-password.html">Change Password</a>
-                        </li>
-                        <li>
-                            <a href="leave-type.html">Leave Type</a>
+                            <a href="roles-permissions.html">Roles & Permisos</a>
                         </li>
                     </ul>
                 </div>
@@ -176,16 +149,16 @@
             <div class="content container-fluid">
                 <div class="row">
                     <div class="col-sm-8">
-                        <h4 class="page-title">Roles & Permissions</h4>
+                        <h4 class="page-title">Roles & Permisos</h4>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-4 col-md-4 col-lg-4 col-xl-3">
-                        <a href="#" class="btn btn-primary btn-block" data-toggle="modal" data-target="#add_role"><i class="fa fa-plus"></i> Add Roles</a>
+                        <a href="#" class="btn btn-primary btn-block" data-toggle="modal" data-target="#add_role"><i class="fa fa-plus"></i> Añadir Roles</a>
                         <div class="roles-menu">
                             <ul>
                                 <li class="active">
-                                    <a href="javascript:void(0);">Administrator
+                                    <a href="javascript:void(0);">Administrador
 										<span class="role-action">
 											<span class="action-circle large" title="Edit" data-toggle="modal" data-target="#edit_role">
 												<i class="material-icons">edit</i>
@@ -196,70 +169,22 @@
 										</span>
 									</a>
                                 </li>
-                                <li><a href="">CEO</a></li>
-                                <li><a href="">Manager</a></li>
-                                <li><a href="">Team Leader</a></li>
-                                <li><a href="">Accountant</a></li>
-                                <li><a href="">Web Developer</a></li>
-                                <li><a href="">Web Designer</a></li>
-                                <li><a href="">HR</a></li>
-                                <li><a href="">UI/UX Developer</a></li>
-                                <li><a href="">SEO Analyst</a></li>
+                                <li><a href="">Vendedor</a></li>
+                                <li><a href="">Cajero</a></li>
+                                <li><a href="">Bodeguero</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-sm-8 col-md-8 col-lg-8 col-xl-9">
                         <h6 class="card-title m-b-20">Module Access</h6>
-                        <div class="m-b-30">
-                            <ul class="list-group">
-                                <li class="list-group-item">
-                                    Employee
-                                    <div class="material-switch float-right">
-                                        <input id="staff_module" type="checkbox">
-                                        <label for="staff_module" class="badge-success"></label>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    Holidays
-                                    <div class="material-switch float-right">
-                                        <input id="holidays_module" type="checkbox">
-                                        <label for="holidays_module" class="badge-success"></label>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    Leave Request
-                                    <div class="material-switch float-right">
-                                        <input id="leave_module" type="checkbox">
-                                        <label for="leave_module" class="badge-success"></label>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    Events
-                                    <div class="material-switch float-right">
-                                        <input id="events_module" type="checkbox">
-                                        <label for="events_module" class="badge-success"></label>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    Chat
-                                    <div class="material-switch float-right">
-                                        <input id="chat_module" type="checkbox">
-                                        <label for="chat_module" class="badge-success"></label>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
                         <div class="table-responsive">
                             <table class="table table-striped custom-table">
                                 <thead>
                                     <tr>
-                                        <th>Module Permission</th>
-                                        <th class="text-center">Read</th>
-                                        <th class="text-center">Write</th>
-                                        <th class="text-center">Create</th>
-                                        <th class="text-center">Delete</th>
-                                        <th class="text-center">Import</th>
-                                        <th class="text-center">Export</th>
+                                        <th>Permisos</th>
+                                        <th class="text-center">Leer</th>
+                                        <th class="text-center">Crear</th>
+                                        <th class="text-center">Borrar</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -274,15 +199,7 @@
                                         <td class="text-center">
                                             <input type="checkbox" checked="">
                                         </td>
-                                        <td class="text-center">
-                                            <input type="checkbox" checked="">
-                                        </td>
-                                        <td class="text-center">
-                                            <input type="checkbox" checked="">
-                                        </td>
-                                        <td class="text-center">
-                                            <input type="checkbox" checked="">
-                                        </td>
+
                                     </tr>
                                     <tr>
                                         <td>Holidays</td>
@@ -295,15 +212,7 @@
                                         <td class="text-center">
                                             <input type="checkbox" checked="">
                                         </td>
-                                        <td class="text-center">
-                                            <input type="checkbox" checked="">
-                                        </td>
-                                        <td class="text-center">
-                                            <input type="checkbox" checked="">
-                                        </td>
-                                        <td class="text-center">
-                                            <input type="checkbox" checked="">
-                                        </td>
+
                                     </tr>
                                     <tr>
                                         <td>Leave Request</td>
@@ -316,15 +225,7 @@
                                         <td class="text-center">
                                             <input type="checkbox" checked="">
                                         </td>
-                                        <td class="text-center">
-                                            <input type="checkbox" checked="">
-                                        </td>
-                                        <td class="text-center">
-                                            <input type="checkbox" checked="">
-                                        </td>
-                                        <td class="text-center">
-                                            <input type="checkbox" checked="">
-                                        </td>
+
                                     </tr>
                                     <tr>
                                         <td>Events</td>
@@ -337,15 +238,7 @@
                                         <td class="text-center">
                                             <input type="checkbox" checked="">
                                         </td>
-                                        <td class="text-center">
-                                            <input type="checkbox" checked="">
-                                        </td>
-                                        <td class="text-center">
-                                            <input type="checkbox" checked="">
-                                        </td>
-                                        <td class="text-center">
-                                            <input type="checkbox" checked="">
-                                        </td>
+
                                     </tr>
                                 </tbody>
                             </table>
